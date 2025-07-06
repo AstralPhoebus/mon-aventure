@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --background:linear-gradient(135deg, #0a0a0a, #6868d4);
+  color: #e0e0e0;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ffffff;
+  }
+}
+
+body {
+  background-image: 
+    url('/gif/end.gif'), /* le GIF */
+    linear-gradient(135deg, #0a0a0a, #6868d4); /* ton dégradé */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; /* ou contain selon l'effet souhaité */
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.transition-opacity {
+  transition-property: opacity;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
