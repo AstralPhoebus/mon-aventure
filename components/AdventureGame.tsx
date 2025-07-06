@@ -50,7 +50,7 @@ export default function AdventureGame() {
 }, [currentScene]);
 
   // Gestion du choix avec transition immersive
-  const handleChoice = (nextId: string) => {
+  const handleChoice = (nextId: number) => {
     setIsTransitioning(true);
     const selectedChoice = currentScene.choices?.find(c=> c.next === nextId);
     setTimeout(() => {
