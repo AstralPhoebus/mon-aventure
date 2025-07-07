@@ -56,7 +56,7 @@ const HomePage: React.FC = () => {
           onClick={handleOptionThree}
           className="bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded"
         >
-          Conquérir la Citadelle du Seigneur des Ténèbres
+          Capturer le chat maléfique
         </button>
 
         <button
