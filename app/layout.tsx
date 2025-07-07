@@ -1,11 +1,11 @@
 // app/layout.tsx
 import "./globals.css";
 import { ReactNode } from "react";
-import BackgroundMusic from "@/components/backgroundmusic";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import Script from 'next/script'; // <--- Import for Hotjar
+import { SpeedInsights } from "@vercel/speed-insights/next"; // <--- Import for Vercel Speed Insights
 
-// Dans ton return global :
-<BackgroundMusic />
+// If you want BackgroundMusic on ALL pages, import it here:
+import BackgroundMusic from "@/components/backgroundmusic";
 
 
 export const metadata = {
@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className="bg-white text-black">
         {children}
 
-        {/* Hotjar Tracking Code */}
+        {/* Hotjar Tracking Code (place after {children}, before SpeedInsights) */}
         <Script id="hotjar-script" strategy="lazyOnload">
           {`
             (function(h,o,t,j,a,r){
@@ -36,7 +36,11 @@ export default function RootLayout({
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
           `}
         </Script>
-        {/* Fin Hotjar Tracking Code */}
+
+        {/* Background Music (place it here if you want it on all pages) */}
+        <BackgroundMusic />
+
+        {/* Vercel Speed Insights (place at the very end of the body) */}
         <SpeedInsights />
       </body>
     </html>
