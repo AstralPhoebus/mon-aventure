@@ -37,6 +37,7 @@ export default function RootLayout({
           `}
         </Script>
         {/* Fin Hotjar Tracking Code */}
+        <SpeedInsights />
       </body>
     </html>
   );
