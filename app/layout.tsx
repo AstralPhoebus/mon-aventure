@@ -3,10 +3,6 @@ import "./globals.css";
 import { ReactNode } from "react";
 import Script from 'next/script'; // <--- Import for Hotjar
 import { SpeedInsights } from "@vercel/speed-insights/next"; // <--- Import for Vercel Speed Insights
-import BackgroundMusic from "@/components/backgroundmusic";
-
-// Dans ton return global :
-<BackgroundMusic />
 
 
 export const metadata = {
