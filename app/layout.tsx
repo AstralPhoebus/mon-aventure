@@ -2,6 +2,7 @@
 import "./globals.css";
 import { ReactNode } from "react";
 import BackgroundMusic from "@/components/backgroundmusic";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // Dans ton return global :
 <BackgroundMusic />
