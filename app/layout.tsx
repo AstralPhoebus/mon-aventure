@@ -3,9 +3,10 @@ import "./globals.css";
 import { ReactNode } from "react";
 import Script from 'next/script'; // <--- Import for Hotjar
 import { SpeedInsights } from "@vercel/speed-insights/next"; // <--- Import for Vercel Speed Insights
-
-// If you want BackgroundMusic on ALL pages, import it here:
 import BackgroundMusic from "@/components/backgroundmusic";
+
+// Dans ton return global :
+<BackgroundMusic />
 
 
 export const metadata = {
@@ -36,9 +37,6 @@ export default function RootLayout({
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
           `}
         </Script>
-
-        {/* Background Music (place it here if you want it on all pages) */}
-        <BackgroundMusic />
 
         {/* Vercel Speed Insights (place at the very end of the body) */}
         <SpeedInsights />
