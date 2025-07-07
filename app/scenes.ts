@@ -22,7 +22,7 @@ const scenes = [
   {
     id: 3,
     text: " La tempête cogne sur la toile. Soudain, une lumière bleue filtre à travers la neige, froide, électrique. Vous entendez une voix grave, qui ne ressemble à aucune voix humaine. Elle murmure des syllabes dans une langue qui ne devrait pas exister, mais que vous comprennez presque, comme un souvenir ancien. Derrière vous, Voss se tient dans l’ombre, ses yeux brillants, l’odeur de cannelle plus forte que jamais.",
-    image: "/images/tente.PNG",
+    image: "/images/Tente.PNG",
     choices: [
       { text: "Touchez la lumière.", next: 7, healthChange: -20},
       { text: "Fermez les yeux et attendre.", next:5, healthChange: -20},
@@ -32,7 +32,7 @@ const scenes = [
   {
     id: 4,
     text: " Vous notez les sons, obsédé par leur structure. Un schéma se forme sur les pages gelées de votre carnet : une carte des tunnels sous la montagne que l'exploration a mise au jour. Voss entre dans la tente. Il vous regarde, un sourire de soulagement sur les lèvres, ses mains tremblantes. « Tu comprends enfin, n’est-ce pas ? » murmure-t-il, en laissant tomber un vieux talisman sur ta table.",
-    image: "/images/folie.PNG",
+    image: "/images/Folie.PNG",
     choices: [
       {text: "Décidez de descendre dans les tunnels pour comprendre.", next : 5, healthChange: -20},
       {text: "Préparer votre équipement pour fuir le lendemain.", next:8}
@@ -50,7 +50,7 @@ const scenes = [
   {
     id: 6,
     text: " Vous revenez au camp. Silence. Les tentes sont éventrées, le sang gelé scintille au clair de lune. Un carnet traîne dans la neige, ouvert sur une page couverte de symboles. Vous reconnaissez vaguement l'écriture de Voss. Vous lisez : « Sous la glace, elle attend. Libération par le sang. Par le chant. Par le sacrifice. » Voss apparaît derrière vous, ses mains couvertes de sang. « Nous sommes si proches… »",
-    image: "/images/camp.jpg",
+    image: "/images/Camp.jpg",
     choices: [
       {text: "Calmer Voss. Suivre les instructions du carnet pour sauver les autres.", next : 9, healthChange: -40},
       {text: "Prendre les rations et partir seul vers l’extérieur. Vous laissez Voss. ", next:8}
@@ -59,7 +59,7 @@ const scenes = [
   {
     id: 7,
     text: " La lumière bleue envahit votre vision. Vous voyez une cité antique sous la glace, des tours noires et des statues cyclopéennes. Des créatures aux tentacules gelés rampent dans les ruines. Une voix vous murmure : « Elle n’est pas seule. Tu n’es pas seul non plus. ».",
-    image: "/images/antique.jpg",
+    image: "/images/Antique.jpg",
     choices: [
       {text: "Utiliser la vision pour trouver la chambre sous la glace.", next : 9, healthChange: -40},
       {text: "Résister, se réveiller, fuir.", next:8, healthChange: -30}
@@ -78,7 +78,7 @@ const scenes = [
   {
     id: 9,
     text: " Vous entrez dans une salle colossale taillée dans la glace. Sous vos pieds, un œil noir s’ouvre, prisonnier dans une gangue translucide. Des cris résonnent dans les tunnels, les voix de vos compagnons perdus. Voss se tient à genoux devant la créature, levant les bras : « Elle va nous sauver. Nous délivrer de la mort ! »",
-    image: "/images/fin.jpg",
+    image: "/images/Fin.jpg",
     choices: [
       {text: "Tenter le rituel pour sauver leurs âmes.", next : 10, healthChange: -20},
       {text: "Fuir en laissant tout derrière vous.", next:11, healthChange: -20},
