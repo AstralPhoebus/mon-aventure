@@ -31,7 +31,7 @@ const scenes = [
   },
   {
     id: 4,
-    text: " Vous notez les sons, obsédé par leur structure. Un schéma se forme sur les pages gelées de votre carnet : une carte des tunnels sous la montagne que l'exploration a mise au jour. Voss entre dans la tente. Il vous regarde, un sourire de soulagement sur les lèvres, ses mains tremblantes. « Tu comprends enfin, n’est-ce pas ? » murmure-t-il, en laissant tomber un vieux talisman sur ta table.",
+    text: " Vous notez les sons, obsédé par leur structure. Un schéma se forme sur les pages gelées de votre carnet : une carte des tunnels sous la montagne que l'exploration a mise au jour. Voss entre dans la tente. Il vous regarde, un sourire de soulagement sur les lèvres, ses mains tremblantes. « Tu comprends enfin, n’est-ce pas ? » murmure-t-il, en laissant tomber un vieux talisman sur votre table.",
     image: "/images/Folie.PNG",
     choices: [
       {text: "Décidez de descendre dans les tunnels pour comprendre.", next : 5, healthChange: -20},
