@@ -13,17 +13,20 @@ const HomePage: React.FC = () => {
 // New handler functions for the additional buttons
  const handleOptionTwo = () => {
     console.log("Option Deux sélectionnée !")
-    setStartAdventure(true);
+    //setStartAdventure(true); // option rendue inactive pour le moment
+   alert("Cette aventure est en construction ! Revenez plus tard.")
     };
 
   const handleOptionThree = () => {
     console.log("Option Trois sélectionnée !");
-    setStartAdventure(true);
+    //setStartAdventure(true);
+    alert("Cette aventure est en construction ! Revenez plus tard.")
   };
 
   const handleOptionFour = () => {
     console.log("Option Quatre sélectionnée !");
-    setStartAdventure(true);
+    //setStartAdventure(true);
+    alert("Cette aventure est en construction ! Revenez plus tard.")
   };
 
 
@@ -48,21 +51,21 @@ const HomePage: React.FC = () => {
           onClick={handleOptionTwo}
           className="bg-green-600 hover:bg-green-800 text-white font-bold py-2 px-4 rounded"
         >
-          Découvrir les Abysses du Temps
+          Découvrir les Abysses du Temps (en construction)
         </button>
 
         <button
           onClick={handleOptionThree}
           className="bg-red-600 hover:bg-red-800 text-white font-bold py-2 px-4 rounded"
         >
-          Capturer le chat maléfique
+          Capturer le chat maléfique (en construction)
         </button>
 
         <button
           onClick={handleOptionFour}
           className="bg-yellow-600 hover:bg-yellow-800 text-black font-bold py-2 px-4 rounded"
         >
-          Rencontrer les dieux des profondeurs
+          Rencontrer les dieux des profondeurs (en construction)
         </button>
         {/* --- New Buttons End Here --- */}
     </div>
